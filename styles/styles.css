@@ -1,0 +1,131 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+   color: darkgray;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+   background-color: #e5e5e5;
+}
+
+main {
+   height: 100vh;
+}
+
+h1 {
+   visibility: hidden;
+   display: none;
+   appearance: 0;
+}
+
+.container {
+   max-width: 1330px;
+   padding: 20px 15px 0;
+   margin: 0 auto;
+   min-height: 100%;
+   display: grid;
+   grid-template-columns: repeat(9, 1fr);
+   grid-auto-rows: minmax(100px, auto);
+   grid-template-areas:
+      "sd sd sd main main main main main main"
+      "ft ft ft ft   ft   ft   ft   ft   ft";
+}
+
+
+.photo {
+   width: 250px;
+   height: 320px;
+   object-fit: cover;
+   margin-bottom: 40px;
+}
+
+aside {
+   min-height: 100%;
+   background-color: #f5f2f2;
+   padding: 60px 60px;
+   grid-area: sd;
+}
+
+article {
+   background-color: #fff;
+   min-height: 100%;
+   padding: 60px 30px 0 110px;
+   grid-area: main;
+}
+
+h2 {
+   font-family: 'Otomanopee One', sans-serif;
+   font-size: 38px;
+   color: darkgray;
+   margin-bottom: 20px;
+}
+
+h2 span {
+   display: block;
+   font-family: 'Ubuntu', sans-serif;
+   color: rgb(223, 128, 11);
+   font-size: 45px;
+
+}
+
+.article__text {
+   font-weight: 600;
+   margin-bottom: 40px;
+   line-height: 30px;
+   border-bottom: 4px solid #e5e5e5;
+}
+
+.article__contacts {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 12px;
+   font-weight: 700;
+   margin-bottom: 100px;
+}
+
+.article__contacts p {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   font-weight: 300;
+}
+
+h3 {
+   font-size: 32px;
+   color: rgb(223, 128, 11);
+   margin-bottom: 15px;
+}
+
+ul li:not(:last-child) {
+   margin-bottom: 15px;
+
+}
+
+ul {
+   margin-bottom: 40px;
+}
+
+a.article__link {
+   color: blue;
+
+}
+
+.projects {
+   margin-bottom: 200px;
+}
+
+footer {
+   display: flex;
+   grid-area: ft;
+   background-color: #f0ebeb;
+   padding: 30px;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.footer__copy {
+   color: #333;
+}
